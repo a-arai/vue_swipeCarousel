@@ -8,9 +8,8 @@
 <body>
     <div id="app" class="carousel" @touchstart="startDrag" @touchend="stopDrag" @mousedown="startDrag" @mouseup="stopDrag">
         <transition :name="transition_name">
-            <div class="vue-carousel_body" :key="index" v-for="(content, index) in contents" v-if="visible_content == index" :style="{backgroundColor: content.bg_color}" >{{ content.title }}</div>
+            <div class="carousel__body" :key="index" v-for="(content, index) in contents" v-if="visible_content == index" :style="{backgroundColor: content.bg_color}" >{{ content.title }}</div>
         </transition>
-        
     </div>
     <p class="detailText">タッチした場所から右に50px以上指が動いたら、一個前のコンテンツ、左に50px以上指が動いたら一個あとのコンテンツを表示</p>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>

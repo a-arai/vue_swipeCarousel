@@ -12,7 +12,7 @@ new Vue({
       title: 'content 3',
       bg_color: '#20d2d3',
     }],
-    transition_name: 'show-next',
+    transition_name: 'showNext',
     visible_content: 0,
     contents_number: null,
     touch: {
@@ -22,7 +22,7 @@ new Vue({
   },
   methods: {
     back() {
-      this.transition_name = 'show-prev';
+      this.transition_name = 'showPrev';
       if((this.visible_content - 1) === -1) {
         this.visible_content = (this.contents_number - 1);
       }else{
@@ -30,7 +30,7 @@ new Vue({
       }
     },
     next() {
-      this.transition_name = 'show-next';
+      this.transition_name = 'showNext';
       this.visible_content =  (this.visible_content + 1) % this.contents_number;
     },
     startDrag: function (e) {

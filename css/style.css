@@ -5,7 +5,7 @@
   overflow: hidden;
   position: relative;
 }
-.vue-carousel_body {
+.carousel__body {
   color: #fff;
   width: 100%;
   height: 150px;
@@ -15,39 +15,21 @@
   text-align: center;
   top: 0;
 }
-.vue-carousel_footer {
-  align-items: center;
-  display: flex;
-  height: 50px;
-  justify-content: space-between;
-  position: absolute;
-  top: 150px;
-  width: 100%;
-}
-.vue-carousel_dot {
-  background-color: #abc2ce;
-  border-radius: 50%;
-  width: 6px;
-  height: 6px;
-}
-.vue-carousel_dot.is-visible {
-  background-color: #7b94f9;
-}
 
-.show-next-enter-active,
-.show-next-leave-active,
-.show-prev-enter-active,
-.show-prev-leave-active {
+.showNext-enter-active,
+.showNext-leave-active,
+.showPrev-enter-active,
+.showPrev-leave-active {
   transition: all .4s;
 }
 
-.show-next-enter,
-.show-prev-leave-to {
+.showNext-enter,
+.showPrev-leave-to {
   transform: translateX(100%);
 }
 
-.show-next-leave-to,
-.show-prev-enter {
+.showNext-leave-to,
+.showPrev-enter {
   transform: translateX(-100%);
 }
 
