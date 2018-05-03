@@ -1,0 +1,57 @@
+.carousel {
+  margin: 30px auto;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.vue-carousel_body {
+  color: #fff;
+  width: 100%;
+  height: 150px;
+  left: 0;
+  line-height: 150px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+}
+.vue-carousel_footer {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  position: absolute;
+  top: 150px;
+  width: 100%;
+}
+.vue-carousel_dot {
+  background-color: #abc2ce;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+}
+.vue-carousel_dot.is-visible {
+  background-color: #7b94f9;
+}
+
+.show-next-enter-active,
+.show-next-leave-active,
+.show-prev-enter-active,
+.show-prev-leave-active {
+  transition: all .4s;
+}
+
+.show-next-enter,
+.show-prev-leave-to {
+  transform: translateX(100%);
+}
+
+.show-next-leave-to,
+.show-prev-enter {
+  transform: translateX(-100%);
+}
+
+.detailText {
+  width: 500px;
+  margin: 0 auto;
+}
